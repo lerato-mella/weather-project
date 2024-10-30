@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Weather App</title>
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <div class="weather-app">
         <header>
-            <form id="weather-app">
+            <form id="search-form">
 <input type="text" placeholder="Enter City.." required class="enter-city" id="city-input">
 <input type="submit" value="Search" class="search-button" >
 </header>
@@ -24,10 +25,22 @@
             </p>
           </div>
           <div class="current-temperature">
-            <span class="current-temperature-icon" id="weather-emoji">☁</span
-            ><span class="current-temperature-value" id="current-temperature"
-              >14</span
+            <span class="current-temperature-icon" id="weather-emoji">☀️</span
+            ><strong class="current-temperature-value" id="current-temperature"
+              >14</strong
             ><span class="current-temperature-unit">°C</span>
           </div>
-</div>
+
 </main>
+<footer>
+    <p>
+      This project was coded by
+      <a href="https://github.com/lerato-mella" target="_blank">Lerato Moakamedi</a> and is
+      <a href="https://github.com/lerato-mella/fun-weatherApp" target="_blank"> on GitHub</a> and
+      <a href="https://luxury-alpaca-81e1e2.netlify.app/" target="_blank">hosted on Netlify</a>
+    </p>
+  </footer>
+</div>
+</body>
+<script src="src/app.js"></script>
+</html>
